@@ -63,7 +63,7 @@ const styles: StyleSheetCSS = {
 
 
 
-const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
+const MusicProjects: React.FC<MusicProjectsProps> = () => {
     const [currentSong, setCurrentSong] = useState<string>('');
 
     return (

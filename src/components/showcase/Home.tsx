@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from '../general';
-import { useNavigate } from 'react-router';
+// import { useNavigate } from 'react-router';
 
 export interface HomeProps {}
 
-const Home: React.FC<HomeProps> = (props) => {
-    const navigate = useNavigate();
+const Home: React.FC<HomeProps> = () => {
+   // const navigate = useNavigate();
 
    
 

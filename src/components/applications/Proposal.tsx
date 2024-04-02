@@ -4,11 +4,6 @@ import useInitialWindowSize from '../../hooks/useInitialWindowSize';
 
 export interface ValProps extends WindowAppProps {}
 
-const moveRandomEl = (elm: HTMLElement) => {
-    elm.style.position = 'absolute';
-    elm.style.top = Math.floor(Math.random() * 90 + 5) + '%';
-    elm.style.left = Math.floor(Math.random() * 90 + 5) + '%';
-  };
 
   
 const Proposal: React.FC<ValProps> = (props) => {

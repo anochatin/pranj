@@ -1,12 +1,9 @@
 import React from 'react';
-import me from '../../assets/pictures/workingAtComputer.jpg';
-import meNow from '../../assets/pictures/currentme.jpg';
-import { Link } from 'react-router-dom';
 
 
 export interface AboutProps {}
 
-const WhyMe: React.FC<AboutProps> = (props) => {
+const WhyMe: React.FC<AboutProps> = () => {
     return (
         // add on resize listener
         <div className="site-page-content">
@@ -40,31 +37,6 @@ const WhyMe: React.FC<AboutProps> = (props) => {
     );
 };
 
-const styles: StyleSheetCSS = {
-    contentHeader: {
-        marginBottom: 16,
-        fontSize: 48,
-    },
-    image: {
-        height: 'auto',
-        width: '100%',
-    },
-    topImage: {
-        height: 'auto',
-        width: '100%',
-        marginBottom: 32,
-    },
-    verticalImage: {
-        alignSelf: 'center',
-        // width: '80%',
-        marginLeft: 32,
-        flex: 0.8,
 
-        alignItems: 'center',
-        // marginBottom: 32,
-        textAlign: 'center',
-        flexDirection: 'column',
-    },
-};
 
 export default WhyMe;

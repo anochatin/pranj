@@ -192,7 +192,7 @@ const GuessWord: React.FC<GuessWordProps> = ({
                     word={word}
                 />
             ))}
-            {[...Array(word.length - savedGuess.length)].map((e, i) => (
+            {[...Array(word.length - savedGuess.length)].map((i) => (
                 <GuessLetter
                     guessed={!active}
                     key={i}
@@ -309,7 +309,7 @@ const Wordle: React.FC<WordleProps> = () => {
                 style={styles.gameContainer}
             >
                 <div style={styles.playArea}>
-                    {[...Array(6)].map((e, i) => (
+                    {[...Array(6)].map((i) => (
                         <GuessWord
                             key={i}
                             guess={currentGuess}

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from '../general';
 // import forHire from '../../assets/pictures/forHireGif.gif';
-import { useLocation, useNavigate } from 'react-router';
+import { useLocation} from 'react-router';
 
 export interface VerticalNavbarProps {}
 
-const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
+const VerticalNavbar: React.FC<VerticalNavbarProps> = () => {
     const location = useLocation();
-    const [projectsExpanded, setProjectsExpanded] = useState(false);
+   // const [projectsExpanded, setProjectsExpanded] = useState(false);
     const [isHome, setIsHome] = useState(false);
 
-    const navigate = useNavigate();
+   // const navigate = useNavigate();
  
 
     useEffect(() => {

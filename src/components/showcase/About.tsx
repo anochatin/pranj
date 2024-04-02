@@ -3,7 +3,7 @@ import React from 'react';
 
 export interface ExperienceProps {}
 
-const About: React.FC<ExperienceProps> = (props) => {
+const About: React.FC<ExperienceProps> = () => {
     return (
         <div className="site-page-content">
             <div className="text-block">
